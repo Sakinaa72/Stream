@@ -1,4 +1,5 @@
 @import "../../style.scss";
+
 .post {
   @include themify($theme) {
     -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
@@ -7,6 +8,7 @@
     border-radius: 20px;
     background-color: themed("bg");
     color: themed("textColor");
+
     .container {
       padding: 20px;
 
@@ -18,12 +20,14 @@
         .userInfo {
           display: flex;
           gap: 20px;
+
           img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             object-fit: cover;
           }
+
           .details {
             display: flex;
             flex-direction: column;
@@ -31,14 +35,17 @@
             .name {
               font-weight: 500;
             }
+
             .date {
               font-size: 12px;
             }
           }
         }
       }
+
       .content {
         margin: 20px 0px;
+
         img {
           width: 100%;
           max-height: 500px;
@@ -46,10 +53,12 @@
           margin-top: 20px;
         }
       }
+
       .info {
         display: flex;
         align-items: center;
         gap: 20px;
+
         .item {
           display: flex;
           align-items: center;
