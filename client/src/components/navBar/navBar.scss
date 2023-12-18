@@ -33,13 +33,20 @@
           width: 500px;
           background-color: transparent;
           color: themed("textColor");
+          @include mobile {
+            display: none;
+          }
         }
       }
     }
+
     .right {
       display: flex;
       align-items: center;
       gap: 20px;
+      @include mobile {
+        display: none;
+      }
       .user {
         display: flex;
         align-items: center;
